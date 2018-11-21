@@ -1,3 +1,3 @@
-# Structual
+# Structure
 ### AppComponent > TodothingComponent > HeaderComponent
 
