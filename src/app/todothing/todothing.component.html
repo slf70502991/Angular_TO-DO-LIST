@@ -1,0 +1,17 @@
+<app-header></app-header>
+<ul 
+*ngFor="let thing of thingdata; let idx = index">
+    <li 
+    (click)="onSelect(thing)"
+    class="thing"
+
+    [ngClass]="{
+        'checked':thing.is_selected === false,
+        'odd':idx%2!=0 
+      }"
+    >{{thing.title}}
+
+        <span class="close" (click)="deleteThing(idx)">&#215;</span>
+    </li>
+    
+</ul>
